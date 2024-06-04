@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pool Frontend</title>
+  <link rel="stylesheet" href="file1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="sign-up-div" class="container">
+    <div class="inner-container">
+      <div class="title">Personal details</div>
+      <div class="content">
+        <form class="form" role="form" id="sign-up-form">
+          <div class="user-details">
+            <div class="input-box">
+              <div class="form-group">
+                <label for="salutation_displayed" class="details">Salutation</label>
+                <select id="salutation_displayed" name="salutation_displayed" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="36">Prof.</option>
+                  <option value="37">Dr.</option>
+                  <option value="38">Mr.</option>
+                  <option value="39">Mrs.</option>
+                  <option value="40">Ms.</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="candidate_name" class="details">Candidate name</label>
+                <input type="text" class="form-control" placeholder="Enter name" id="candidate_name" name="candidate_name" required>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="gender_displayed" class="details">Gender</label>
+                <select id="gender_displayed" name="gender_displayed" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="type_displayed" class="details">Candidate type</label>
+                <select id="type_displayed" name="type_displayed" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="1">Child</option>
+                  <option value="2">Adult</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="candidate_date_of_birth" class="details">Date of Birth</label>
+                <input type="date" placeholder="Date Of Birth" id="candidate_date_of_birth" name="candidate_date_of_birth" class="form-control" required/>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="candidate_email" class="details">Email ID</label>
+                <input type="email" name="candidate_email" id="candidate_email" placeholder="Enter Email" class="form-control" required>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="parent_name" class="details">Parent name</label>
+                <input type="text" name="parent_name" id="parent_name" placeholder="Enter Parent Name" class="form-control">
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="contact_no" class="details">Contact number</label>
+                <input type="text" name="contact_no" id="contact_no" class="form-control" placeholder="Enter Contact Number" required>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="id_prooftype" class="details">ID Proof type</label>
+                <select id="id_prooftype" name="id_prooftype" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="1">Aadhar card</option>
+                  <option value="2">Pan card</option>
+                  <option value="3">School ID</option>
+                  <option value="4">Birth certificate</option>
+                  <option value="5">Voter ID</option>
+                  <option value="6">Passport</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="prooftype_number" class="details">ID Proof number</label>
+                <input type="text" placeholder="Eg: Aadhar card 12 digit number" id="prooftype_number" name="prooftype_number" class="form-control">
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="alt_contact_name" class="details">Alternate contact name</label>
+                <input type="text" placeholder="Enter name" id="alt_contact_name" name="alt_contact_name" class="form-control">
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="alt_contact_number" class="details">Alternate contact number</label>
+                <input type="text" placeholder="Enter Phone number" id="alt_contact_number" name="alt_contact_number" class="form-control">
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="bloodgroup_displayed" class="details">Blood group</label>
+                <select id="bloodgroup_displayed" name="bloodgroup_displayed" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="1">O -ve</option>
+                  <option value="2">O +ve</option>
+                  <option value="3">A -ve</option>
+                  <option value="4">A +ve</option>
+                  <option value="5">B -ve</option>
+                  <option value="6">B +ve</option>
+                  <option value="7">AB -ve</option>
+                  <option value="8">AB +ve</option>
+                  <option value="9">OB -ve</option>
+                  <option value="10">OB +ve</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="ailment_displayed" class="details">Any ailments</label>
+                <select id="ailment_displayed" name="ailment_displayed" class="form-control">
+                  <option value="0">Select</option>
+                  <option value="1">None</option>
+                  <option value="2">Fits/Epilepsy</option>
+                  <option value="3">Skin Diseases/ Any Contagious Diseases</option>
+                  <option value="4">Heart Problems</option>
+                  <option value="5">Specify if any Other Problem</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="correspondance_address" class="details">Correspondence Address</label>
+                <input type="text" class="form-control" placeholder="Enter Correspondence Address" id="correspondance_address" name="correspondance_address" required>
+              </div>
+            </div>
+            <div class="input-box">
+              <div class="form-group">
+                <label for="user_profile_upload" class="details">User Profile Upload</label>
+                <input type="file" id="image-file" name="image" accept="image/*">
+                
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="table-div" style="display: none;" class="container">
+    <h2>Sign Up Details</h2>
+    <table id="details-table" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Profile pic</th>
+          <th>Name</th>
+          <th>Phone number</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sign up details will be appended here -->
+      </tbody>
+    </table>
+    <button id="add-another" class="btn btn-secondary">Add Another</button>
+    <button id="final-submit" class="btn btn-success">Submit</button>
+  </div>
+  
+  <script src="file1.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
